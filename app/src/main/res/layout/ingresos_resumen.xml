@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+	android:background="#D3F2FD">
+	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:orientation="horizontal"
+        android:layout_weight="0">
+   	    <TextView
+   	        android:id="@+id/bnfinitoBlock"
+   	        android:layout_width="match_parent"
+   	        android:layout_height="match_parent"
+   	        android:text="Resumen Ingresos"
+			android:textColor="#D6000000"
+			android:background="#BBDEFB"
+   	        android:layout_gravity="center_vertical"
+   	        android:gravity="center_vertical|center_horizontal"
+   	        android:textAppearance="?android:attr/textAppearanceLarge"
+   	        android:padding="10dp"
+			android:textSize="23sp"/>
+   	</LinearLayout>
+
+   	<ScrollView
+   	    android:layout_width="match_parent"
+   	    android:layout_height="0dp"
+        android:layout_weight="1"
+   	    android:orientation="horizontal">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="0dp"
+                    android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:text="Total (Facturas cobradas): "
+					android:textColor="#E6000000"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical|center_horizontal"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:textSize="17sp" />
+				<TextView
+					android:id="@+id/totalTicket"
+					android:layout_width="0dp"
+                    android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:text=" - "
+					android:textColor="#C6000000"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical|center_horizontal"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:textSize="15sp" />
+			</LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="top">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matricula"
+                        android:textColor="#E6000000"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/resumenMatr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textColor="#C6000000"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="top">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entrada"
+                        android:textColor="#E6000000"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/resumenEntrada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textColor="#C6000000"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="top">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salida"
+                        android:textColor="#E6000000"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/resumenSalida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textColor="#C6000000"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.20"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="top">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cobrado"
+                        android:textColor="#E6000000"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/resumenCobrado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textColor="#C6000000"
+                        android:layout_gravity="top|center_horizontal"
+                        android:gravity="top|center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+		</LinearLayout>
+   	</ScrollView>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/volverResumen"
+        android:text="Volver"
+        android:textSize="16sp"
+        android:background="@anim/custom_button"/>
+
+</LinearLayout>

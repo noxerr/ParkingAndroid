@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#D3F2FD">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/botlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Datos Exportados"
+            android:textColor="#D6000000"
+            android:background="#BBDEFB"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:padding="10dp"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/exportText"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#E6000000"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/okExport"
+        android:text="Aceptar"
+        android:textSize="16sp"
+        android:background="@anim/custom_button"/>
+
+</LinearLayout>

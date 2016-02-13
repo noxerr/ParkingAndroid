@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="parking.roca.dani.parking.Parking_Management"
+    android:background="#AAAAAA"
+    android:keepScreenOn="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_above="@+id/fragment2"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1D607D8B">
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"
+        android:layout_marginTop="1dp"
+        android:name="parking.roca.dani.parking.ParkingPintarFragment"
+        android:id="@+id/fragment"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:name="parking.roca.dani.parking.ButtonListFragment"
+        android:id="@id/fragment2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#D3F2FD">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/botonInfinitoBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tiquet"
+            android:textColor="#D6000000"
+            android:background="#BBDEFB"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:padding="10dp"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Matricula: "
+                    android:textColor="#E6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/matriculaTicket"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textColor="#C6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Plaza: "
+                    android:textColor="#E6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/plazaTicket"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textColor="#C6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Entrada: "
+                    android:textColor="#E6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/EntradaTicket"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textColor="#C6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Salida: "
+                    android:textColor="#E6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/SalidaTicket"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textColor="#C6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Precio: "
+                    android:textColor="#E6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/precioTicket"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textColor="#C6000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/okTicket"
+        android:text="Volver"
+        android:textSize="17sp"
+        android:background="@anim/custom_button"/>
+
+</LinearLayout>

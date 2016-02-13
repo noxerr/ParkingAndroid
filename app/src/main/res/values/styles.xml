@@ -1,0 +1,16 @@
+<resources>
+
+
+    <style name="AlertCustom_two" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth">
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+
+    <style name="botonesParking">
+        <item name="android:shadowColor">#607D8B</item>
+        <item name="android:shadowDy">-3.0</item>
+        <item name="android:shadowRadius">10.5</item>
+    </style>
+
+</resources>

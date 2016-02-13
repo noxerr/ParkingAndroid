@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+	android:background="#D3F2FD">
+	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:orientation="horizontal"
+        android:layout_weight="0">
+   	    <TextView
+   	        android:layout_width="match_parent"
+   	        android:layout_height="match_parent"
+   	        android:text="Ayuda"
+			android:textColor="#D6000000"
+			android:background="#BBDEFB"
+   	        android:layout_gravity="center_vertical"
+   	        android:gravity="center_vertical|center_horizontal"
+   	        android:textAppearance="?android:attr/textAppearanceLarge"
+   	        android:padding="10dp"
+			android:textSize="25sp"/>
+   	</LinearLayout>
+
+   	<ScrollView
+   	    android:layout_width="match_parent"
+   	    android:layout_height="0dp"
+        android:layout_weight="1"
+   	    android:orientation="horizontal">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(La sección de ayuda es Scroll, para ver más, arrastra el texto hacia arriba)"
+                android:textColor="#E6000000"
+                android:textStyle="italic"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrar"
+                android:textColor="#E6000000"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En esta pestaña tenemos un cuadro para meter la matrícula del coche que entra. A continuación veremos una flecha roja parpadeando, indicando la plaza. Para quitarla podemos esperar 3 segundos o clicar en la pantalla."
+                android:textColor="#E6000000"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salir"
+                android:textColor="#E6000000"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En esta pestaña tenemos un cuadro para meter la matrícula del coche que sale. A continuación veremos una flecha roja parpadeando, indicando la plaza en la que estaba. Para quitarla podemos esperar 3 segundos o clicar en la pantalla. Además, al sacar un coche nos aparecerá un tiquet con la fecha de entrada, salida y el precio de la estancia."
+                android:textColor="#E6000000"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matriculas"
+                android:textColor="#E6000000"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En esta pestaña tenemos un cuadro con la lista de coches (sus matriculas) con la plaza en la que estan aparcados."
+                android:textColor="#E6000000"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresos"
+                android:textColor="#E6000000"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En esta pestaña tenemos un checkBox, podemos clicarlo para consultar los ingresos desde que ha empezado el día hasta el momento de la consulta. También podemos seleccionar el periodo en el cual queremos visualizar los ingresos. Solo apareceran las matrículas cuya fecha de salida esté entre el periodo seleccionado. El total cobrado solo incluye el dinero que ya han pagado los coches, es decir, los que ya han salido."
+                android:textColor="#E6000000"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resumenes Mensuales"
+                android:textColor="#E6000000"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En esta pestaña podemos ver los datos resumidos de entradas, salidas y cobros entre el periodo que elijas (seran periodos de meses completos). El mes de inicio contara desde el dia 1 a las 00:00 y el fin contara hasta las 23:59:59 del ultimo dia del mes. El campo Coches Distintos indica el numero de coches con matricula distinta que han entrado/salido en este periodo."
+                android:textColor="#E6000000"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exportar"
+                android:textColor="#E6000000"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Con este boton podemos exportar todas las salidas registradas (con su correspondiente fecha de entrada) desde que se instalo la aplicacion. El archivo se guardara en formato .csv, con los decimales separados por comas y los valores separados por punto y coma. Encontrareis los archivos en la carpeta de almacenamiento interno /parking_datos/archivo.csv"
+                android:textColor="#E6000000"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+   	</ScrollView>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/volverAyuda"
+        android:text="Volver"
+        android:textSize="17sp"
+        android:background="@anim/custom_button"/>
+
+</LinearLayout>
